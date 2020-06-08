@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src=""></script>
+</head>
+<body>
+	<div>
+    	<input id="myInput" type="text" placeholder="enter number"/>+
+    	<input id="myInput2" type="number" placeholder="enter number">=
+    	<span id="added">?</span>
+    </div>
+    <div>
+	   <button onclick="messagePopUp();">calculate</button>
+    </div>
+
+    <script>
+
+		function messagePopUp(){
+		var firtInt = document.getElementById("myInput").value;
+		var secondInt = document.getElementById("myInput2").value;
+		var aadElem = document.getElementById('added').innerHTML =parseInt(firtInt)+parseInt(secondInt);
+
+        
+
+			console.log(parseInt(firtInt)+parseInt(secondInt))
+		}
+	</script>
+</body>
+</html>
